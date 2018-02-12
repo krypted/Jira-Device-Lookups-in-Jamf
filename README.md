@@ -15,4 +15,6 @@ Here's what you should do:
 - Go through the whole "Start the add-on" section
 - Instead of "Install the add-on in HipChat" section, choose this one
 
-If you don't have "Upload add-on" link in there, click on the "Settings" link under the add-ons list on the "Manage Add-ons" page and check "Enable Private Listings" & "Enable Development Mode" checkboxes and refresh the page
+If you don't have "Upload add-on" link in there, click on the "Settings" link under the add-ons list on the "Manage Add-ons" page and check "Enable Private Listings" & "Enable Development Mode" checkboxes and refresh the page.
+
+You will also need to edit index.js and put your usernames and passwords where applicable.
