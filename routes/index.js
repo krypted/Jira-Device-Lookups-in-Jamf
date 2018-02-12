@@ -23,7 +23,7 @@ module.exports = function (app, addon) {
             }
 
             var Client = require('node-rest-client').Client;
-            var auth = {user: "nazar", password: "nazar"};
+            var auth = {user: "YOURJAMFUSERNAME", password: "YOURJAMFPASSWORD"};
             var client = new Client(auth);
             var params = {
                 headers: {"Content-Type": "application/json"}
@@ -38,7 +38,7 @@ module.exports = function (app, addon) {
 
                     client.get("https://kryptedjamf.jamfcloud.com/JSSResource/mobiledevices/id/" + deviceId, params, function (data) {
                         if (data && data.mobile_device) {
-                            var options_auth = {user: "devnsobchuk@gmail.com", password: "Li100kNaz"};
+                            var options_auth = {user: "YOURUSER", password: "YOURPASSWORD"};
                             client = new Client(options_auth);
                             var params = {
                                 data: {
