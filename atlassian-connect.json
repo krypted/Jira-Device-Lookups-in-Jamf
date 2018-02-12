@@ -1,0 +1,35 @@
+{
+    "key": "devices-lookup-poc",
+    "name": "Devices Lookup PoC",
+    "description": "Proof of Concept add-on",
+    "vendor": {
+        "name": "Charles Edge",
+        "url": "https://www.krypted.com"
+    },
+    "baseUrl": "{{localBaseUrl}}",
+    "links": {
+        "self": "{{localBaseUrl}}/atlassian-connect.json",
+        "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "scopes": [
+        "READ",
+        "WRITE"
+    ],
+    "modules": {
+        "webhooks": [
+            {
+                "event": "jira:issue_created",
+                "url": "/issue_created_webhook"
+            }, {
+                "event": "jira:issue_updated",
+                "url": "/issue_created_webhook"
+            }
+        ]
+    }
+}
