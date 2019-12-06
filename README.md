@@ -1,6 +1,6 @@
-# Atlassian Add-on using Express
+# Jamf Device Lookups in Jira Using An Atlassian Add-on using Express
 
-Congratulations! You've successfully created an Atlassian Connect Add-on using the Express web application framework.
+This integration uses the Atlassian Connect Add-on with the Express web application framework. It displays a dialog field in your Jira instance that allows you to lookup device details based on the serial number of a device. It is meant to be a proof of concept and is not officially supported; however, please feel free to take the code and make it your own, free of charge. 
 
 ## What's next?
 
